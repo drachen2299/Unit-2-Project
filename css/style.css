@@ -1,15 +1,194 @@
-.main-wrap {
-  background-color:  rgb(244, 240, 240);
-
-
-}
-
-.content-det {
-  background-color: rgb(255, 255, 255);
+/* -------------------------------------------------------
+              Base Element styles
+----------------------------------------------------------*/
+* {
+    box-sizing: border-box;
 
 }
 
-.naver {
+a {
+    color: grey;
     text-decoration: none;
+    text-transform: uppercase;
 
+
+}
+
+li {
+    color: rgb(57, 57, 57);
+}
+
+h2 {
+    margin: 0;
+}
+
+body {
+
+    text-align: center;
+
+}
+
+a:after {
+    color: grey;
+}
+
+/* -------------------------------------------------------
+              Base Layout styles
+----------------------------------------------------------*/
+
+.main-wrap {
+    background-color: rgb(244, 240, 240);
+
+
+}
+
+.container {
+    background-color: white;
+    padding-top: 0;
+    margin: 0 auto;
+    
+
+
+}
+
+.main-nav {
+    color: #171717
+}
+
+.main-nav a {
+    float: right;
+    padding: 1em;
+}
+
+.main-header {
+    background-color: rgb(244, 240, 240);
+    width: 100%;
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
+    margin: 0 auto;
+
+
+
+}
+
+.main-footer {
+    background-color: rgb(244, 240, 240);
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.name {
+    float: left;
+    padding-left: 15px;
+
+}
+
+.content-img {
+    width: 90%;
+    padding-top: 3em;
+}
+
+
+
+
+
+/* -------------------------------------------------------
+              Media Queries
+----------------------------------------------------------*/
+
+@media (min-width: 769px) {
+
+
+    .main-wrap {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .name,
+    .naver,
+    .naver li {
+        display: inline;
+
+    }
+
+    .col1 {
+        width: 50%;
+        float: left;
+    }
+
+    .col1 p {
+        padding-left: 2em;
+        padding-right: 2em;
+
+    }
+
+    .col2 {
+        width: 50%;
+        float: left;
+    }
+
+    .col2 p {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+}
+
+@media (min-width: 1025px) {
+
+    .container {
+        background-color: white;
+       padding-top: 0;
+        width: 100%;
+        
+
+    }
+
+    .main-header {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .main-header p {
+        padding-left;
+        3em;
+        text-align: left;
+        width: 40%;
+    }
+
+
+
+    .row1 {
+        float: left;
+        width: 33.3%;
+        padding-bottom: 0;
+    }
+
+    .row2 {
+        float: left;
+        width: 33.3%;
+    }
+
+    .prof-img {
+        width: 30%;
+        float: right;
+        padding-right: 20px;
+
+    }
+
+
+
+}
+
+
+
+/* -------------------------------------------------------
+              clearfix
+----------------------------------------------------------*/
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
