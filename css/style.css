@@ -32,8 +32,8 @@ a:after {
     color: grey;
 }
 
-main-head p {
-    text
+.main-head p {
+
 }
 
 /* -------------------------------------------------------
@@ -50,6 +50,13 @@ main-head p {
     padding-top: 0;
 }
 
+.secondary-container {
+    background-color: white;
+    border: rgb(244, 240, 240);
+    border-style: solid;
+    border-top-width: 35px;
+}
+
 .main-nav {
     color: #171717
 }
@@ -61,14 +68,14 @@ main-head p {
 
 .main-header {
     background-color: rgb(244, 240, 240);
-    width: 100%;    
+    width: 100%;
     padding-top: 1.5em;
     margin: 0 auto;
 }
 
 .main-header p {
     text-align: center;
-    
+
 }
 
 .main-footer {
@@ -96,6 +103,15 @@ main-head p {
 /* -------------------------------------------------------
               Media Queries
 ----------------------------------------------------------*/
+@@media (min-width: 320px) {
+
+  .name {
+    text-align: center;
+    float: none;
+
+  }
+
+}
 
 @media (min-width: 769px) {
 
@@ -131,13 +147,18 @@ main-head p {
 }
 
 @media (min-width: 1025px) {
-    
+
     .container {
         width: 96%;
         margin: 0 auto;
-        
+
     }
-    
+
+    .secondary-container {
+      width: 96%;
+      margin: 0 auto;
+    }
+
     .main-header {
         padding-left: 1em;
         padding-right: 1em;
