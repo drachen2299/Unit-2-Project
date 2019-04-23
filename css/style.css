@@ -3,7 +3,7 @@
 ----------------------------------------------------------*/
 * {
     box-sizing: border-box;
-
+    font-family: 'Oswald', sans-serif;
 }
 
 a {
@@ -32,9 +32,7 @@ a:after {
     color: grey;
 }
 
-.main-head p {
 
-}
 
 /* -------------------------------------------------------
               Base Layout styles
@@ -42,6 +40,7 @@ a:after {
 
 .wrapper {
     background-color: rgb(244, 240, 240);
+
 
 }
 
@@ -61,15 +60,12 @@ a:after {
     color: #171717
 }
 
-.main-nav a {
-    float: right;
-    padding: 1em;
-}
+
 
 .main-header {
     background-color: rgb(244, 240, 240);
-    width: 100%;
     padding-top: 1.5em;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -85,19 +81,10 @@ a:after {
 
 }
 
-.name {
-    float: left;
-    padding-left: 15px;
-
-}
-
 .content-img {
     width: 90%;
     padding-top: 3em;
 }
-
-
-
 
 
 /* -------------------------------------------------------
@@ -105,21 +92,31 @@ a:after {
 ----------------------------------------------------------*/
 @@media (min-width: 320px) {
 
-  .name {
-    text-align: center;
-    float: none;
 
-  }
 
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 
+    .prof-img {
+      float: right;
+      width: 40%;
+      margin-left: 45px;
+      padding-bottom: 35px;
+    }
 
-    .name,
-    .naver,
-    .naver li {
-        display: inline;
+    .main-nav li {
+      display: inline;
+      text-align: center;
+
+    }
+
+    .main-header p {
+      padding-top: 30px;
+      padding-left: 15px;
+      padding-right: 15px;
+      letter-spacing: 2px;
+      font-size: 1.2em;
 
     }
 
@@ -143,52 +140,80 @@ a:after {
         padding-left: 2em;
         padding-right: 2em;
     }
+    .main-nav li {
+    text-align: center;
+    padding: 1em;}
 
 }
 
+
+
+
 @media (min-width: 1025px) {
 
-    .container {
-        width: 96%;
-        margin: 0 auto;
-
-    }
-
-    .secondary-container {
-      width: 96%;
-      margin: 0 auto;
-    }
-
-    .main-header {
-        padding-left: 1em;
-        padding-right: 1em;
-    }
-
-    .main-header p {
-        padding-left: 3em;
-        text-align: left;
-        width: 40%;
-    }
 
 
+      .name,
+      .main-nav li, {
+          display: inline;
 
-    .row1 {
-        float: left;
-        width: 33.3%;
-        padding-bottom: 0;
-    }
+      }
+      .name {
+          float: left;
+          padding-left: 15px;
+        }
 
-    .row2 {
-        float: left;
-        width: 33.3%;
-    }
+        .main-nav {
+          display: inline;
+          float: right;
 
-    .prof-img {
-        width: 30%;
-        float: right;
-        padding-right: 20px;
+        }
+        .main-nav li {
+          float: left;
+          padding: 25px;
+        }
 
-    }
+        .container {
+            width: 96%;
+            margin: 0 auto;
+            padding: 35px;
+
+        }
+
+        .secondary-container {
+          width: 96%;
+          margin: 0 auto;
+          padding: 35px;
+        }
+
+        .main-header {
+            padding-left: 3em;
+            padding-right: 1em;
+            padding-bottom: 2em;
+        }
+
+        .main-header p {
+          width: 40%;
+
+        }
+
+        .row1 {
+            float: left;
+            width: 33.3%;
+            padding-bottom: 0;
+        }
+
+        .row2 {
+            float: left;
+            width: 33.3%;
+        }
+
+        .prof-img {
+            float: right;
+            width: 20%;
+            margin-left: 45px;            
+        }
+
 
 
 
