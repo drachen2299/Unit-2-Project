@@ -50,10 +50,10 @@ a:after {
 }
 
 .secondary-container {
+    margin-top: 35px;
     background-color: white;
     border: rgb(244, 240, 240);
-    border-style: solid;
-    border-top-width: 35px;
+
 }
 
 .main-nav {
@@ -64,7 +64,7 @@ a:after {
 
 .main-header {
     background-color: rgb(244, 240, 240);
-    padding-top: 1.5em;
+    padding-top: 1px;
     width: 100%;
     margin: 0 auto;
 }
@@ -90,8 +90,27 @@ a:after {
 /* -------------------------------------------------------
               Media Queries
 ----------------------------------------------------------*/
-@@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 767px) {
+      .name {
+        font-size: 2.5em;
+      }
 
+      .main-nav {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0;
+      }
+
+      .main-nav li {
+        background-color: white;
+        font-size: 1.5em;
+        padding: 15px;
+        margin: 5px 15px 5px 15px;
+      }
+
+      .prof-img {
+        width:93%;
+      }
 
 
 }
@@ -128,7 +147,6 @@ a:after {
     .col1 p {
         padding-left: 2em;
         padding-right: 2em;
-
     }
 
     .col2 {
@@ -142,7 +160,8 @@ a:after {
     }
     .main-nav li {
     text-align: center;
-    padding: 1em;}
+    padding: 1em;
+    }
 
 }
 
@@ -163,15 +182,11 @@ a:after {
           padding-left: 15px;
         }
 
-        .main-nav {
-          display: inline;
+      .main-nav {
           float: right;
 
-        }
-        .main-nav li {
-          float: left;
-          padding: 25px;
-        }
+      }
+
 
         .container {
             width: 96%;
@@ -187,7 +202,6 @@ a:after {
         }
 
         .main-header {
-            padding-left: 3em;
             padding-right: 1em;
             padding-bottom: 2em;
         }
@@ -209,9 +223,9 @@ a:after {
         }
 
         .prof-img {
+          margin-top: 45px;
             float: right;
-            width: 20%;
-            margin-left: 45px;            
+            width: 30%;
         }
 
 
