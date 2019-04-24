@@ -2,245 +2,279 @@
               Base Element styles
 ----------------------------------------------------------*/
 * {
-    box-sizing: border-box;
-    font-family: 'Oswald', sans-serif;
+  box-sizing: border-box;
 }
 
 a {
-    color: grey;
-    text-decoration: none;
-    text-transform: uppercase;
-
-
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 li {
-    color: rgb(57, 57, 57);
+  color: rgb(57, 57, 57);
+}
+
+h1, h2, h3, h4, h5, li {
+  font-family: 'Oswald', sans-serif;
 }
 
 h2 {
-    margin: 0;
+  margin: 0;
 }
 
 body {
-
-    text-align: center;
-
+  text-align: center;
 }
 
 a:after {
-    color: grey;
+  color: grey;
 }
 
-
+p {
+  color: grey;
+  line-height: 1.7em;
+  font-family: 'Lato', sans-serif;
+}
 
 /* -------------------------------------------------------
               Base Layout styles
 ----------------------------------------------------------*/
-
 .wrapper {
-    background-color: rgb(244, 240, 240);
-
-
+  background-color: rgb(244, 240, 240);
 }
 
 .container {
-    background-color: white;
-    padding-top: 0;
+  background-color: white;
+  padding-top: 0;
 }
 
 .secondary-container {
-    margin-top: 35px;
-    background-color: white;
-    border: rgb(244, 240, 240);
-
+  margin-top: 35px;
+  background-color: white;
+  border: rgb(244, 240, 240);
 }
 
 .main-nav {
-    color: #171717
+  color: #171717
 }
 
-
-
 .main-header {
-    background-color: rgb(244, 240, 240);
-    padding-top: 1px;
-    width: 100%;
-    margin: 0 auto;
+  background-color: rgb(244, 240, 240);
+  padding-top: 1px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .main-header p {
-    text-align: center;
-
+  text-align: center;
 }
 
 .main-footer {
-    background-color: rgb(244, 240, 240);
-    width: 100%;
-    margin: 0 auto;
-
+  background-color: rgb(244, 240, 240);
+  width: 100%;
+  margin: 0 auto;
 }
 
 .content-img {
-    width: 90%;
-    padding-top: 3em;
+  width: 90%;
+  padding-top: 3em;
 }
-
 
 /* -------------------------------------------------------
               Media Queries
 ----------------------------------------------------------*/
 @media (min-width: 320px) and (max-width: 767px) {
-      .name {
-        font-size: 2.5em;
-      }
+  .name {
+    font-size: 2.5em;
+  }
 
-      .main-nav {
-        width: 100%;
-        margin-left: 0;
-        padding-left: 0;
-      }
+  .main-nav {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+  }
 
-      .main-nav li {
-        background-color: white;
-        font-size: 1.5em;
-        padding: 15px;
-        margin: 5px 15px 5px 15px;
-      }
+  .main-nav li {
+    background-color: white;
+    font-size: 1.5em;
+    padding: 15px;
+    margin: 5px 15px 5px 15px;
+  }
 
-      .prof-img {
-        width:93%;
-      }
+  .prof-img {
+    width: 70%;
+  }
 
+  .bot-nav li {
+    display: none;
+  }
 
+  .bot-name {
+    float: left;
+    display: inline;
+  }
+
+  .top-button {
+    float: right;
+    display: inline;
+  }
+
+  .bot-banner {
+    width: 92%;
+    margin: 0 auto;
+    border-top-style: solid;
+    border-color: rgb(193, 192, 192);
+    border-radius: .2px;
+  }
+
+  .main-footer p {
+    margin: 10px 25px 10px 25px;
+  }
+
+  .contact-info h3 {}
+
+  .contact-info p {
+    line-height: 2em;
+    font-size: 1.2em;
+  }
 }
 
 @media (min-width: 768px) {
+  .prof-img {
+    float: right;
+    width: 40%;
+    margin-left: 45px;
+    padding-bottom: 35px;
+  }
 
-    .prof-img {
-      float: right;
-      width: 40%;
-      margin-left: 45px;
-      padding-bottom: 35px;
-    }
+  .main-nav li {
+    display: inline;
+    text-align: center;
+  }
 
-    .main-nav li {
-      display: inline;
-      text-align: center;
+  .main-header p {
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    letter-spacing: 2px;
+    font-size: 1.2em;
+  }
 
-    }
+  .col1 {
+    width: 50%;
+    float: left;
+  }
 
-    .main-header p {
-      padding-top: 30px;
-      padding-left: 15px;
-      padding-right: 15px;
-      letter-spacing: 2px;
-      font-size: 1.2em;
+  .col1 p {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
 
-    }
+  .col2 {
+    width: 50%;
+    float: left;
+  }
 
-    .col1 {
-        width: 50%;
-        float: left;
-    }
+  .col2 p {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
 
-    .col1 p {
-        padding-left: 2em;
-        padding-right: 2em;
-    }
-
-    .col2 {
-        width: 50%;
-        float: left;
-    }
-
-    .col2 p {
-        padding-left: 2em;
-        padding-right: 2em;
-    }
-    .main-nav li {
+  .main-nav li {
     text-align: center;
     padding: 1em;
-    }
+  }
 
+  .name,
+  .main-nav li {
+    display: inline;
+  }
+
+  .bot-banner {
+    width: 92%;
+    margin: 0 auto;
+    border-top-style: solid;
+    border-color: rgb(193, 192, 192);
+    border-radius: .2px;
+  }
+
+  .name {
+    float: left;
+    padding-left: 15px;
+  }
+
+  .main-nav {
+    float: right;
+  }
+
+  .top-button {
+    display: none;
+  }
+
+  .bot-name,
+  .bot-nav li {
+    display: inline;
+  }
+
+  .bot-name {
+    float: left;
+  }
+
+  .bot-nav {
+    float: right;
+  }
+
+  .bot-nav li {
+    padding: 15px;
+  }
 }
 
+@media (min-width: 1024px) {
+  .container {
+    width: 96%;
+    margin: 0 auto;
+    padding: 35px;
+  }
 
+  .secondary-container {
+    width: 96%;
+    margin: 0 auto;
+    padding: 35px;
+  }
 
+  .main-header {
+    padding-right: 1em;
+    padding-bottom: 2em;
+  }
 
-@media (min-width: 1025px) {
+  .main-header p {
+    width: 40%;
+  }
 
+  .row1 {
+    float: left;
+    width: 33.3%;
+    padding-bottom: 0;
+  }
 
+  .row2 {
+    float: left;
+    width: 33.3%;
+  }
 
-      .name,
-      .main-nav li, {
-          display: inline;
-
-      }
-      .name {
-          float: left;
-          padding-left: 15px;
-        }
-
-      .main-nav {
-          float: right;
-
-      }
-
-
-        .container {
-            width: 96%;
-            margin: 0 auto;
-            padding: 35px;
-
-        }
-
-        .secondary-container {
-          width: 96%;
-          margin: 0 auto;
-          padding: 35px;
-        }
-
-        .main-header {
-            padding-right: 1em;
-            padding-bottom: 2em;
-        }
-
-        .main-header p {
-          width: 40%;
-
-        }
-
-        .row1 {
-            float: left;
-            width: 33.3%;
-            padding-bottom: 0;
-        }
-
-        .row2 {
-            float: left;
-            width: 33.3%;
-        }
-
-        .prof-img {
-          margin-top: 45px;
-            float: right;
-            width: 30%;
-        }
-
-
-
-
+  .prof-img {
+    margin-top: 45px;
+    float: right;
+    width: 30%;
+  }
 }
-
-
 
 /* -------------------------------------------------------
               clearfix
 ----------------------------------------------------------*/
-
 .clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
