@@ -46,11 +46,12 @@ p {
 
 .container {
   background-color: white;
+  margin: 35px 15px 0 15px;
   padding-top: 0;
 }
 
 .secondary-container {
-  margin-top: 35px;
+  margin: 35px 15px 15px 15px;
   background-color: white;
   border: rgb(244, 240, 240);
 }
@@ -131,8 +132,6 @@ p {
   .main-footer p {
     margin: 10px 25px 10px 25px;
   }
-
-  .contact-info h3 {}
 
   .contact-info p {
     line-height: 2em;
@@ -231,17 +230,7 @@ p {
 }
 
 @media (min-width: 1024px) {
-  .container {
-    width: 96%;
-    margin: 0 auto;
-    padding: 35px;
-  }
 
-  .secondary-container {
-    width: 96%;
-    margin: 0 auto;
-    padding: 35px;
-  }
 
   .main-header {
     padding-right: 1em;
