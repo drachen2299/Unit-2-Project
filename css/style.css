@@ -32,7 +32,7 @@ a:after {
 }
 
 p {
-  color: grey;
+  color: rgb(69, 66, 67);
   line-height: 1.7em;
   font-family: 'Lato', sans-serif;
 }
@@ -41,7 +41,7 @@ p {
               Base Layout styles
 ----------------------------------------------------------*/
 .wrapper {
-  background-color: rgb(244, 240, 240);
+  background-color: #EFBC63;
 }
 
 .container {
@@ -57,22 +57,17 @@ p {
 }
 
 .main-nav {
-  color: #171717
+  color: #171717;
 }
 
 .main-header {
-  background-color: rgb(244, 240, 240);
+  background-color: #EFBC63;
   padding-top: 1px;
   width: 100%;
   margin: 0 auto;
 }
-
-.main-header p {
-  text-align: center;
-}
-
 .main-footer {
-  background-color: rgb(244, 240, 240);
+  background-color: #EFBC63;
   width: 100%;
   margin: 0 auto;
 }
@@ -88,6 +83,11 @@ p {
 @media (min-width: 320px) and (max-width: 767px) {
   .name {
     font-size: 2.5em;
+  }
+
+  .main-header p {
+    padding: 15px;
+
   }
 
   .main-nav {
@@ -107,6 +107,7 @@ p {
 
   .prof-img {
     width: 70%;
+    padding-right: 15px;
   }
 
   .bot-nav li {
@@ -133,6 +134,7 @@ p {
 
   .main-footer p {
     margin: 10px 25px 10px 25px;
+    
   }
 
   .contact-info p {
@@ -144,9 +146,10 @@ p {
 @media (min-width: 768px) {
   .prof-img {
     float: right;
-    width: 40%;
+    width: 50%;
     margin-left: 45px;
     padding-bottom: 35px;
+    padding-right: 15px;
   }
 
   .main-nav li {
@@ -155,11 +158,12 @@ p {
   }
 
   .main-header p {
+    text-align: left;
     padding-top: 30px;
-    padding-left: 15px;
+    padding-left: 25px;
     padding-right: 15px;
-    letter-spacing: 2px;
-    font-size: 1.2em;
+    letter-spacing: 1.2px;
+    font-size: 1.1em;
   }
 
   .col1 {
@@ -209,6 +213,12 @@ p {
     float: right;
   }
 
+  .main-footer p {
+    padding:15px 3em 15px 3em;
+
+
+  }
+
   .top-button {
     display: none;
   }
@@ -241,6 +251,7 @@ p {
 
   .main-header p {
     width: 40%;
+    padding-top: 4em;
   }
 
   .row1 {
@@ -257,7 +268,8 @@ p {
   .prof-img {
     margin-top: 45px;
     float: right;
-    width: 30%;
+    width: 50%;
+    padding-right: 15px;
   }
 }
 
