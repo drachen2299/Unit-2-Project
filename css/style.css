@@ -95,20 +95,14 @@ p {
 
 .main-nav {
   color: #171717;
-  width: 100%;
-  margin-left: 0;
-  padding-left: 0;
 }
 
-.main-nav a {
-  display: block;
-  padding: 15px;
-}
 
 .main-nav li {
   background-color: white;
+  width: 100%;
   font-size: 1.5em;
-  margin: 5px 15px 5px 15px;
+  
 }
 
 .prof-img {
@@ -158,31 +152,30 @@ p {
     padding-bottom: 35px;
     padding-right: 15px;
   }
-
   .name,
   .main-nav ul {
     display: inline;
   }
 
+  .name {
+    float: left;
+  }
+
   .main-nav {
     float: right;
   }
-
-  .name {
-    float: left;
+  .main-nav ul {
 
   }
-
   .main-nav li {
-    background-color: inherit;
-    text-align: center;
-    
+    padding: 0;
+    display: inline;
   }
 
+  .main-nav a {
+    padding: 0;
 
-
-
-
+  }
   .main-header p {
     text-align: left;
     padding-top: 30px;
