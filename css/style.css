@@ -42,23 +42,26 @@ p {
 ----------------------------------------------------------*/
 .wrapper {
   background-color: #EFBC63;
+
+}
+
+.max-stretch {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .container {
   background-color: white;
-  margin: 35px 15px 0 15px;
   padding-top: 0;
+
 }
 
 .secondary-container {
-  margin: 35px 15px 15px 15px;
   background-color: white;
   border: rgb(244, 240, 240);
+  margin-top: 15px;
 }
 
-.main-nav {
-  color: #171717;
-}
 
 .main-header {
   background-color: #EFBC63;
@@ -82,73 +85,71 @@ p {
   width: 90%;
   padding-top: 3em;
 }
+.name {
+  font-size: 2.5em;
+}
+
+.main-header p {
+  padding: 15px;
+}
+
+.main-nav {
+  color: #171717;
+  width: 100%;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.main-nav a {
+  display: block;
+  padding: 15px;
+}
+
+.main-nav li {
+  background-color: white;
+  font-size: 1.5em;
+  margin: 5px 15px 5px 15px;
+}
+
+.prof-img {
+  width: 70%;
+  padding-right: 15px;
+}
+
+.bot-nav li {
+  display: none;
+}
+
+.bot-name {
+  float: left;
+  display: inline;
+}
+
+.top-button {
+  float: right;
+  display: inline;
+}
+
+.bot-banner {
+  width: 92%;
+  margin: 0 auto;
+  border-top-style: solid;
+  border-color: rgb(193, 192, 192);
+  border-radius: .2px;
+}
+
+.main-footer p {
+  margin: 10px 25px 10px 25px;
+}
+
+.contact-info p {
+  line-height: 2em;
+  font-size: 1.2em;
+}
 
 /* -------------------------------------------------------
               Media Queries
 ----------------------------------------------------------*/
-@media (min-width: 320px) and (max-width: 767px) {
-  .name {
-    font-size: 2.5em;
-  }
-
-  .main-header p {
-    padding: 15px;
-  }
-
-  .main-nav {
-    width: 100%;
-    margin-left: 0;
-    padding-left: 0;
-  }
-
-  .main-nav a {
-    display: block;
-    padding: 15px;
-  }
-
-  .main-nav li {
-    background-color: white;
-    font-size: 1.5em;
-    margin: 5px 15px 5px 15px;
-  }
-
-  .prof-img {
-    width: 70%;
-    padding-right: 15px;
-  }
-
-  .bot-nav li {
-    display: none;
-  }
-
-  .bot-name {
-    float: left;
-    display: inline;
-  }
-
-  .top-button {
-    float: right;
-    display: inline;
-  }
-
-  .bot-banner {
-    width: 92%;
-    margin: 0 auto;
-    border-top-style: solid;
-    border-color: rgb(193, 192, 192);
-    border-radius: .2px;
-  }
-
-  .main-footer p {
-    margin: 10px 25px 10px 25px;
-  }
-
-  .contact-info p {
-    line-height: 2em;
-    font-size: 1.2em;
-  }
-}
-
 @media (min-width: 768px) {
   .prof-img {
     float: right;
@@ -158,10 +159,29 @@ p {
     padding-right: 15px;
   }
 
-  .main-nav li {
+  .name,
+  .main-nav ul {
     display: inline;
-    text-align: center;
   }
+
+  .main-nav {
+    float: right;
+  }
+
+  .name {
+    float: left;
+
+  }
+
+  .main-nav li {
+    background-color: inherit;
+    text-align: center;
+    
+  }
+
+
+
+
 
   .main-header p {
     text-align: left;
@@ -192,16 +212,6 @@ p {
     padding-right: 2em;
   }
 
-  .main-nav li {
-    text-align: center;
-    padding: 1em;
-  }
-
-  .name,
-  .main-nav li {
-    display: inline;
-  }
-
   .bot-banner {
     width: 92%;
     margin: 0 auto;
@@ -210,14 +220,6 @@ p {
     border-radius: .2px;
   }
 
-  .name {
-    float: left;
-    padding-left: 15px;
-  }
-
-  .main-nav {
-    float: right;
-  }
 
   .main-footer p {
     padding: 15px 3em 15px 3em;
@@ -228,8 +230,8 @@ p {
   }
 
   .bot-name,
-  .bot-nav li {
-    display: inline;
+  .bot-nav ul {
+    display: inline-block;
   }
 
   .bot-name {
@@ -242,6 +244,7 @@ p {
 
   .bot-nav li {
     padding: 15px;
+    display: inline;
   }
 }
 
